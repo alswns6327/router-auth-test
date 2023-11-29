@@ -11,6 +11,7 @@
 <script>
 import { useRoute, useRouter } from 'vue-router';
 import { loginProcess } from '../utils/AuthUtil';
+import { reactive } from 'vue';
 
     export default {
         name : "Login",

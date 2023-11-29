@@ -49,7 +49,7 @@ const logoutProcess = (callback) => {
 // 경로와 사용자 정보의 role을 기반으로 접근 여부 결정(true/false)
 const isMatchToRoles = (reqPath) => {
     // {path : "/", roles : ["everybody"]}
-    const path = pathsToRoles.find(pr => pr.path = reqPath);
+    const path = pathsToRoles.find(pr => pr.path === reqPath);
     // 경로 없을 경우 접근 불가
     if (!path) return false;
 
